@@ -1,0 +1,28 @@
+package org.jsp.spring.controller;
+
+import java.util.Scanner;
+
+import org.jsp.spring.dto.User;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+public class UpdateData {
+
+	public static void main(String[] args) {
+		ApplicationContext context =new ClassPathXmlApplicationContext("hibernate-spring.xml");
+		HibernateTemplate template = context.getBean(HibernateTemplate.class);
+		User u= new User();
+Scanner sc = new Scanner(System.in);
+int id = sc.nextInt();
+
+
+		u.setId(id);
+		u.setName("Sujit");
+		u.setPhone(89089);
+		u.setPassword("sujit123");
+		template.update(u);
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package org.jsp.spring.dto;
+
+public class User {
+private int id;
+private String name;
+private long phone;
+private String password;
+}

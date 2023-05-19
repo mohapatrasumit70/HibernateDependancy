@@ -1,0 +1,31 @@
+package org.jsp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import org.jsp.dto.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+@Repository
+public class UserDao {
+@Autowired
+EntityManager manager;
+public User SaveUser(User user)
+{
+	EntityTransaction transaction =manager.getTransaction();
+	manager.persist(user);
+	transaction.begin();
+	transaction.commit();
+	return user;
+}
+public User UpdateUser(User user) {
+	
+	EntityTransaction transaction =manager.getTransaction();
+	manager.merge(user);
+	transaction.begin();
+	transaction.commit();
+	return user;
+	
+	
+}
+}

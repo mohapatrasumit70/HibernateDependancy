@@ -1,0 +1,18 @@
+package org.jsp.Controller;
+
+import java.util.Scanner;
+
+import org.jsp.dao.UserDao;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Controller {
+	static Scanner sc = new Scanner(System.in);
+	static UserDao dao;
+	static {
+		ApplicationContext context = new AnnotationConfigApplicationContext("org.jsp");
+	}
+public static void main(String[] args) {
+	
+}
+}

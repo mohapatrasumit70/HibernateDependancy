@@ -1,0 +1,15 @@
+package org.jsp.IceCreamShop;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class TestIceCream {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext("IceCreamShop");
+		IceCreamTeast t = context.getBean(IceCreamTeast.class);
+		t.getC().Eat();
+
+	}
+
+}

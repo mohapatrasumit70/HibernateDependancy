@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="dept" class="org.jsp.Employee.Department">
+		<property name="eid">
+			<list>
+				<value>18</value>
+				<value>3</value>
+				<value>43</value>
+				<value>73</value>
+			</list>
+		</property>
+		<property name="name">
+			<set>
+				<value>Virat</value>
+				<value>Gambhir</value>
+				<value>Siraj</value>
+				<value>Naveen</value>
+			</set>
+		</property>
+		<property name="detail">
+			<map>
+				<entry key="18" value="virat">
+	            </entry>
+				<entry key="3" value="Gambhir">
+				</entry>
+				<entry key="43" value="siraj">
+				</entry>
+				<entry key="73" value="Naveen">
+				</entry>
+			</map>
+		</property>
+
+	</bean>
+</beans>

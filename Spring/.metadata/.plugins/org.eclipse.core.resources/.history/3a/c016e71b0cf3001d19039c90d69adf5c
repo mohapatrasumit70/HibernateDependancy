@@ -1,0 +1,16 @@
+package org.jsp.UsingAutowired;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext("UsingAutowired");
+		ConfirugationEmployee c = context.getBean(ConfirugationEmployee.class);
+		System.out.println(c.getList());
+		System.out.println(c.getSet());
+
+	}
+
+}

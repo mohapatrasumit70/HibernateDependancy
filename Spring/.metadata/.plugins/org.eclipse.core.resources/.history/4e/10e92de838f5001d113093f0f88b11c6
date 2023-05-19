@@ -1,0 +1,10 @@
+package org.jsp.spring.controller;
+
+public class UpdateData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

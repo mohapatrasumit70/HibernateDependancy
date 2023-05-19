@@ -1,0 +1,59 @@
+package org.jsp.spring.controller;
+
+import java.util.Scanner;
+
+import org.jsp.spring.dao.UserDao;
+import org.jsp.spring.dto.User;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+public class UserSaveData {
+static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+
+		System.out.println("1 : SAVE USER");
+		System.out.println("2 : UPDATE USER");
+		System.out.println("3 : DELETE USER");
+		System.out.println("4 : FETCH USER");
+		int select =sc.nextInt();
+switch(select)
+{
+case 1:{saveUser();break;}
+case 2:{UpdateUser();break;}
+case 3:{FetchUser();break;}
+case 4:{DeleteUser();break;}
+}
+
+	
+	
+	}
+	private static void DeleteUser() {
+	
+		
+	}
+	private static void FetchUser() {
+		
+		
+	}
+	private static void UpdateUser() {
+		ApplicationContext context =new ClassPathXmlApplicationContext("hibernate-spring.xml");
+		HibernateTemplate template = context.getBean(HibernateTemplate.class);
+		User u =new User();
+		u.setName("sumit");
+		u.setPhone(9658);
+		u.setPassword("sumit123");
+		template.save(u);	
+	}
+	private static void saveUser() {
+		ApplicationContext context =new ClassPathXmlApplicationContext("hibernate-spring.xml");
+		UserDao dao = context.getBean("dao",UserDao.class);
+		User u =new User();
+		u.setId(1);
+		u.setName("sujit");
+		u.setPhone(89089);
+		u.setPassword("sujit123");
+		dao.UpdateUser(u);
+	}
+	
+}

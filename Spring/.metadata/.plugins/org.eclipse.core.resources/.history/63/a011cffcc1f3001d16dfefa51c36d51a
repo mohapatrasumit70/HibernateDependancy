@@ -1,0 +1,10 @@
+package org.jsp.IceCreamShop;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("IceCreamShop")
+public class IceCreamConfig {
+
+}

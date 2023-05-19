@@ -1,0 +1,32 @@
+package org.jsp.spring.controller;
+
+import java.util.Scanner;
+
+import org.jsp.spring.dto.User;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+public class UpdateData {
+
+	public static void main(String[] args) {
+		ApplicationContext context =new ClassPathXmlApplicationContext("hibernate-spring.xml");
+		HibernateTemplate template = context.getBean(HibernateTemplate.class);
+		User u= new User();
+Scanner sc = new Scanner(System.in);
+System.out.println("ENTER YOUR ID TO UPADATE");
+int id = sc.nextInt();
+System.out.println("ENTER NAME,PHONE ,PASSWORD");
+String name=sc.next();
+long phone = sc.nextLong();
+String password= sc.next();
+
+		u.setId(id);
+		u.setName(name);
+		u.setPhone(phone);
+		u.setPassword(password);
+		template.update(u);
+		System.out.println("DATE IS UPDATED");
+	}
+
+}

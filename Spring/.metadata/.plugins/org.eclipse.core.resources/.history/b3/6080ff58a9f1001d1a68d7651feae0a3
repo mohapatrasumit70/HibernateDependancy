@@ -1,0 +1,9 @@
+package orj.jsp.SpringDemo3;
+
+public class Product {
+private int id;
+private String name;
+public void start() {
+	
+}
+}

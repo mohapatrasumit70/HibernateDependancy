@@ -1,0 +1,14 @@
+package org.jsp.spring.dao;
+
+import org.jsp.spring.dto.User;
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
+import org.springframework.transaction.annotation.Transactional;
+
+public class UserDao extends HibernateDaoSupport {
+@Transactional
+public User SaveUser(User user)
+{
+	getHibernateTemplate().save(user);
+	return user;
+}
+}

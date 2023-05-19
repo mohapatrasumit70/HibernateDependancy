@@ -1,0 +1,10 @@
+package org.jsp.IceCreamShop;
+
+public class Chocolate implements IceCream {
+
+	public void Eat() {
+		System.out.println("Baby Eat CHocolate IceCream");
+		
+	}
+
+}

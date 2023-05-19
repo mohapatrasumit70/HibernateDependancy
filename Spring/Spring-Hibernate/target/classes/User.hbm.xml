@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="org.jsp.spring.dto.User">
+<id name="id">
+<generator class="identity"/>
+</id>
+<property name="name"></property>
+<property name="phone"></property>
+<property name="password"></property>
+</class>
+</hibernate-mapping>

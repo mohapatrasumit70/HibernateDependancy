@@ -1,0 +1,8 @@
+package org.jsp.IceCreamShop;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class IceCreamTeast {
+private IceCream c;
+}
