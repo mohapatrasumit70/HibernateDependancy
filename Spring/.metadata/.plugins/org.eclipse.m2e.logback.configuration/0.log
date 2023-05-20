@@ -3193,3 +3193,5 @@ java.net.UnknownHostException: java.sun.com
 2023-05-20 16:16:25,104 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SUMIT\Spring\Spring-mvc-demo\src\test\resources
 2023-05-20 16:16:44,989 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-05-20 16:16:44,990 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SUMIT\Spring\Spring-mvc-demo\src\main\resources
+2023-05-20 16:16:44,994 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-20 16:16:44,994 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SUMIT\Spring\Spring-mvc-demo\src\test\resources

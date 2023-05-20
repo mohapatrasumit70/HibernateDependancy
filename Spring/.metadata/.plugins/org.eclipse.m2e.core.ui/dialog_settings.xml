@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SUMIT\Spring\Spring-mvc-demo"/>
+			<item value="C:\SUMIT\Spring\Spring-Hibernate\src\main\resources\hibernate-spring.xml"/>
 			<item value="C:\SUMIT\Spring\Spring-Hibernate\src\main\java\org\jsp\spring\controller\UserSaveData.java"/>
 			<item value="C:\SUMIT\Spring\Spring-SP\src\main\java\org\jsp\IceCreamShop\IceCreamTeast.java"/>
 		</list>
@@ -15,6 +17,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -45,21 +48,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="org.jsp.spring.jdbc"/>
-			<item value="org.jsp.spring"/>
-			<item value="org.jsp"/>
-			<item value="org.jsp.Spring"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="spring-jdbc"/>
-			<item value="Spring-Hibernate"/>
-			<item value="User-Spring-App"/>
-			<item value="Spring-SP"/>
-			<item value="LifeCycle-Demo"/>
-			<item value="SpringDemo2"/>
-			<item value="SpringDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -76,5 +68,7 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
 	</section>
 </section>
