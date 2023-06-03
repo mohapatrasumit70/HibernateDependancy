@@ -1,8 +1,0 @@
-package orj.jsp.SpringDemo3;
-
-public class User {
-private Product p;
-void Start() {
-	
-}
-}

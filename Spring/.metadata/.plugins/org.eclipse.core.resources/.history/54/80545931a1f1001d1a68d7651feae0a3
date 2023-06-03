@@ -1,8 +1,0 @@
-package orj.jsp.SpringDemo3;
-
-public class User {
-private Product p;
-public void Start() {
-	System.out.println("Product is product");
-}
-}

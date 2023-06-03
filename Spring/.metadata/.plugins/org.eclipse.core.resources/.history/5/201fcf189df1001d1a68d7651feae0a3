@@ -1,7 +1,0 @@
-package org.jsp.Annotation;
-
-public class Bike {
-public void start() {
-	System.out.println("Bike has been Start");
-}
-}

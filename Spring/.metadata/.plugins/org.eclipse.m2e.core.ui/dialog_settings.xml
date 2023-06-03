@@ -29,10 +29,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.jsp.SpringMvcPraticeForTest"/>
+			<item value="org.jsp.Spring_Mvc_Test_Pratice"/>
+			<item value="org.jsp.Spring_Mvc_Orm"/>
+			<item value="org.jsp.Spring_Mvc_Classs"/>
 		</list>
 		<list key="groupId">
+			<item value="org.jsp"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringMvcPraticeForTest"/>
+			<item value="Spring-Mvc-Test-Pratice"/>
+			<item value="Spring-Mvc-Orm"/>
+			<item value="Spring-Mvc-Classs"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -66,6 +75,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
